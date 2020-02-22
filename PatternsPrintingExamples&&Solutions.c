@@ -1,9 +1,16 @@
+/******************************************************************************
+
+                            Printing Patterns Exercises
+                                   With Solutions
+
+*******************************************************************************/
+
 #include <stdio.h>
 
 int main()
 {
     int i = 0, jj = 0, j = 0, jloop = 0, jjloop = 0; 
-  
+    
     /*
         We want to print this!
         
@@ -14,7 +21,7 @@ int main()
          * * * * *
     
     */
-  
+    
     for(i = 1; i<=5; i++)
     {
         for(j = 1; j <= (5-i); j++)
@@ -91,7 +98,7 @@ int main()
         * * * * *
     
     */
-  
+    
     for(i = 1; i<=5; i++)
     {   
         for(j = 1; j <= 5; j++)
@@ -343,6 +350,7 @@ int main()
     
         Guess what? This is floyd triangle~!
     */
+    
     int number = 1; 
     for(i = 1; i<=4; i++)
     {
@@ -484,6 +492,7 @@ int main()
         Guess what? This is weird pattern triangle ~ AGAIN!
     */
     
+    
     for(i = 1; i<=5; i++)
     {
         for(j = 5-i; j>=1; j--)
@@ -578,6 +587,7 @@ int main()
     
     */
     
+    
     for(i = 1; i<=4; i++)
     {
         for(j = 1; j<=i; j++)
@@ -635,6 +645,93 @@ int main()
         }
         printf("\n");
     }
-
+    
+    printf("\n");
+    
+    /*
+    
+        We want to print this!    
+        
+        ****** ******
+        *****   *****
+        ***       ***
+        *           *
+        *           *
+        ***       ***
+        *****   *****
+        ****** ******
+    
+    */
+    
+    for(i = 0; i<=2*(5-1); i++)
+    {
+        printf("*");
+    }
+    printf("\n");
+    for(i = 1; i<=5; i++)
+    {
+        for(j = 1; j<=(5-i); j++)
+        {
+            printf("*");
+        }
+        for(jj = 1; jj<=2*i-1; jj++)
+        {
+            printf(" ");
+        }
+        for(j = 1; j<=(5-i); j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(i = 1; i<=4; i++)
+    {
+        for(jjloop = 1; jjloop <= i; jjloop++)
+        {
+            printf("*");
+        }
+        for(jloop = 0; jloop <=2*(4-i); jloop++)
+        {
+            printf(" ");
+        }
+        for(jjloop = 1; jjloop <= i; jjloop++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(i = 0; i<=2*(4-0); i++)
+    {
+        printf("*");
+    }
+    printf("\n");
+    
+    /*
+    
+        We want to print this pattern!
+        
+                 *
+                # *
+               # * #
+              * # * # 
+             * # * # *
+             
+    */
+    
+    for(i = 1; i<=5; i++)
+    {
+        for(j = 5-i; j>=1; j--)
+        {
+            printf(" ");
+        }
+        for(jj = 1; jj<=(i); jj++)
+        {
+            if(jj%2 == 0)
+                printf("# ");
+            else
+                printf("* ");
+        }
+        printf("\n"); 
+    }
     return 0;
 }
