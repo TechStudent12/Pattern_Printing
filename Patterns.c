@@ -10,6 +10,7 @@
 int main()
 {
     int i = 0, jj = 0, j = 0; 
+  
     /*
         We want to print this!
         
@@ -20,6 +21,7 @@ int main()
          * * * * *
     
     */
+  
     for(i = 1; i<=5; i++)
     {
         for(j = 1; j <= (5-i); j++)
@@ -78,7 +80,7 @@ int main()
         *     * *
         * * * * *
         
-        AND also this! (Still need to this)
+        AND also this! (Still need to this - GOOD PRACTICE QUESTION)
         
         * * * * *
         * *     *
@@ -87,7 +89,7 @@ int main()
         * * * * *
         
                 
-        AND also this! (Still need to do this)
+        AND also this! (Still need to do this - GOOD PRACTICE QUESTION)
         
         * * * * *
         * * * * *
@@ -96,6 +98,7 @@ int main()
         * * * * *
     
     */
+  
     for(i = 1; i<=5; i++)
     {   
         for(j = 1; j <= 5; j++)
@@ -481,7 +484,6 @@ int main()
     
         Guess what? This is weird pattern triangle ~ AGAIN!
     */
-    
     
     for(i = 1; i<=5; i++)
     {
