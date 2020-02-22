@@ -10,7 +10,6 @@
 int main()
 {
     int i = 0, jj = 0, j = 0; 
-  
     /*
         We want to print this!
         
@@ -21,7 +20,6 @@ int main()
          * * * * *
     
     */
-  
     for(i = 1; i<=5; i++)
     {
         for(j = 1; j <= (5-i); j++)
@@ -80,7 +78,7 @@ int main()
         *     * *
         * * * * *
         
-        AND also this! (Still need to this - GOOD PRACTICE QUESTION)
+        AND also this! (Still need to this)
         
         * * * * *
         * *     *
@@ -89,7 +87,7 @@ int main()
         * * * * *
         
                 
-        AND also this! (Still need to do this - GOOD PRACTICE QUESTION)
+        AND also this! (Still need to do this)
         
         * * * * *
         * * * * *
@@ -98,7 +96,6 @@ int main()
         * * * * *
     
     */
-  
     for(i = 1; i<=5; i++)
     {   
         for(j = 1; j <= 5; j++)
@@ -149,7 +146,6 @@ int main()
         * * *   
         * * * *
         * * * * *
-        
     */
     
     for(i = 1; i <= 5; i++)
@@ -197,7 +193,6 @@ int main()
         * * *   
         * * 
         * 
-        
     */
     
     
@@ -245,7 +240,6 @@ int main()
         C C C   
         D D 
         E 
-        
     */
     
     char alphaBet = 'A'; 
@@ -484,9 +478,18 @@ int main()
                 *       *       *
             *       *       *       *
         *       *       *       *       *
+        
+                        OR
+                        
+                        *
+                       * *
+                      * * *
+                     * * * *
+                    * * * * *
     
-        Guess what? This is weird pattern pyramid ~ AGAIN!
+        Guess what? This is weird pattern triangle ~ AGAIN!
     */
+    
     
     for(i = 1; i<=5; i++)
     {
@@ -500,9 +503,7 @@ int main()
         }
         printf("\n"); 
     }
-  
-    printf("\n");
-  
+    
     /* 
     
         We want to print this!
@@ -516,6 +517,8 @@ int main()
         Guess what? This is a pascal triangle!
         
     */
+    
+    printf("\n");
 
     for(i = 1; i <= 5; i++)
     {
@@ -537,8 +540,63 @@ int main()
         }
         printf("\n");
     }
-  
+    
     printf("\n");
-  
+    
+    /*
+    
+        We want to try to do this!
+        
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+    
+        (OMG, look at that beautiful pyramid!)
+    
+    */
+    
+    for(i = 1; i<=5; i++)
+    {
+        for(j = 1; j<=(5-i); j++)
+        {
+            printf(" ");
+        }
+        for(jj = 1; jj <= (2*i-1); jj++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    printf("\n");
+    
+    /*
+    
+        We want to try to do this!
+    
+                 *******
+                  ***** 
+                   ***
+                    *
+    
+        (OMG, look at that beautiful pyramid!)
+    
+    */
+    
+    for(i = 1; i<=5; i++)
+    {
+        for(j = 1; j<=i; j++)
+        {
+            printf(" ");
+        }
+        for(jj=0; jj<=2*(5-i); jj++)
+        {
+            printf("*");
+        }
+        printf("\n"); 
+    }
+
     return 0;
 }
