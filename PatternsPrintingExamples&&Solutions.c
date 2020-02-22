@@ -149,6 +149,7 @@ int main()
         * * *   
         * * * *
         * * * * *
+        
     */
     
     for(i = 1; i <= 5; i++)
@@ -196,6 +197,7 @@ int main()
         * * *   
         * * 
         * 
+        
     */
     
     
@@ -243,6 +245,7 @@ int main()
         C C C   
         D D 
         E 
+        
     */
     
     char alphaBet = 'A'; 
@@ -482,7 +485,7 @@ int main()
             *       *       *       *
         *       *       *       *       *
     
-        Guess what? This is weird pattern triangle ~ AGAIN!
+        Guess what? This is weird pattern pyramid ~ AGAIN!
     */
     
     for(i = 1; i<=5; i++)
