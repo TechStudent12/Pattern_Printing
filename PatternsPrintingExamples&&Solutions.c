@@ -1,15 +1,8 @@
-/******************************************************************************
-
-                              Printing Patterns
-                           Examples and Solutions 
-
-*******************************************************************************/
-
 #include <stdio.h>
 
 int main()
 {
-    int i = 0, jj = 0, j = 0; 
+    int i = 0, jj = 0, j = 0, jloop = 0, jjloop = 0; 
   
     /*
         We want to print this!
@@ -185,8 +178,6 @@ int main()
     }
     
     printf("\n");
-    
-    
     
     /*
         We want to print this!
@@ -493,7 +484,6 @@ int main()
         Guess what? This is weird pattern triangle ~ AGAIN!
     */
     
-    
     for(i = 1; i<=5; i++)
     {
         for(j = 5-i; j>=1; j--)
@@ -584,21 +574,66 @@ int main()
                    ***
                     *
     
-        (OMG, look at that beautiful pyramid!)
+        (OMG, look at that beautiful inverted pyramid!)
     
     */
     
-    for(i = 1; i<=5; i++)
+    for(i = 1; i<=4; i++)
     {
         for(j = 1; j<=i; j++)
         {
             printf(" ");
         }
-        for(jj=0; jj<=2*(5-i); jj++)
+        for(jj=0; jj<=2*(4-i); jj++)
         {
             printf("*");
         }
         printf("\n"); 
+    }
+    
+    printf("\n"); 
+    
+    /*
+    
+        We want to try to do this!
+        
+                    *
+                   ***
+                  *****        
+                 *******
+                *********
+                 *******
+                  ***** 
+                   ***
+                    *
+    
+        (OMG, look at that beautiful diamond (lol)!)
+    
+    */
+    
+    for(i = 1; i<=5; i++)
+    {
+        for(j = 1; j<=(5-i); j++)
+        {
+            printf(" ");
+        }
+        for(jj = 1; jj<=2*i-1; jj++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(i = 1; i<=4; i++)
+    {
+        for(jjloop = 1; jjloop <= i; jjloop++)
+        {
+            printf(" ");
+        }
+        for(jloop = 0; jloop <=2*(4-i); jloop++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
 
     return 0;
