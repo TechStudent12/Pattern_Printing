@@ -500,6 +500,45 @@ int main()
         }
         printf("\n"); 
     }
+  
+    printf("\n");
+  
+    /* 
+    
+        We want to print this!
+        
+                        1
+                    1       1
+                1       2       1
+            1       3       3       1
+        1       4       6      4       1
+        
+        Guess what? This is a pascal triangle!
+        
+    */
 
+    for(i = 1; i <= 5; i++)
+    {
+        for(j = 5-i; j>=0; j--)
+        {
+            printf(" ");
+        }
+        
+        int characterPascal = 1; 
+        int denominator = 1; 
+        int numerator = i-1; 
+        for(jj = 1; jj<=i; jj++)
+        {
+            printf("%d ", characterPascal);
+            characterPascal = characterPascal*numerator; 
+            characterPascal = characterPascal/denominator; 
+            denominator++;
+            numerator--; 
+        }
+        printf("\n");
+    }
+  
+    printf("\n");
+  
     return 0;
 }
