@@ -10,6 +10,7 @@
 int main()
 {
     int i = 0, jj = 0, j = 0; 
+  
     /*
         We want to print this!
         
@@ -20,6 +21,7 @@ int main()
          * * * * *
     
     */
+  
     for(i = 1; i<=5; i++)
     {
         for(j = 1; j <= (5-i); j++)
@@ -96,6 +98,7 @@ int main()
         * * * * *
     
     */
+  
     for(i = 1; i<=5; i++)
     {   
         for(j = 1; j <= 5; j++)
